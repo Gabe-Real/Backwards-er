@@ -96,15 +96,15 @@ public class ReverseInput {
         String word = WORDS[rand.nextInt(WORDS.length)];
         String reversed = new StringBuilder(word).reverse().toString();
 
-        System.out.println("\n🧠 Reverse Guess Game!");
+        System.out.println("\nReverse Guess Game!");
         System.out.println("Guess the original word: \"" + reversed + "\"");
         System.out.print("> ");
         String guess = scanner.nextLine().trim();
 
         if (guess.equalsIgnoreCase(word)) {
-            printFramedTyping("✅ Correct!");
+            printFramedTyping("Correct!");
         } else {
-            printFramedTyping("❌ Nope! The correct word was: " + word);
+            printFramedTyping("Nope! The correct word was: " + word);
         }
     }
 
@@ -113,15 +113,15 @@ public class ReverseInput {
         String word = WORDS[rand.nextInt(WORDS.length)];
         String jumbled = jumbleWord(word);
 
-        System.out.println("\n🧩 Jumble Word Game!");
+        System.out.println("\nJumble Word Game!");
         System.out.println("Unscramble the word: \"" + jumbled + "\"");
         System.out.print("> ");
         String guess = scanner.nextLine().trim();
 
         if (guess.equalsIgnoreCase(word)) {
-            printFramedTyping("✅ Correct!");
+            printFramedTyping("Correct!");
         } else {
-            printFramedTyping("❌ Nope! The correct word was: " + word);
+            printFramedTyping("Nope! The correct word was: " + word);
         }
     }
 
