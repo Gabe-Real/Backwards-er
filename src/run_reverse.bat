@@ -9,7 +9,7 @@ echo Compiling ReverseInput.java...
 javac -encoding UTF-8 ReverseInput.java
 if errorlevel 1 (
     echo.
-    echo Compilation failed. Press any key to exit.
+    echo ❌ Compilation failed. Press any key to exit.
     pause >nul
     exit /b
 )
